@@ -3,40 +3,67 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet"> 
         <link rel="stylesheet" href="./css/styles.css">
         
-
     </head>
     <body>
         <div class='container'>
             <header class='header'>
-                <a class='logo' href="#">
+                <div class='logo'>
                     <i class="fab fa-firefox fa-5x"></i>
-                </a>
-                <a class='navlink' href="#">
-                    testing
-                </a>
-                <a class='navlink' href="#">
-                    testing
-                </a>
-                <a class='navlink' href="#">
-                    testing
-                </a>
-                <a class='navlink' href="#">
-                    testing
-                </a>
+                </div>
+                <div class='links'>
+                    <a href="#">Area 1</a>
+                    <a href="#">Area 2</a>
+                    <a href="#">Area 3</a>
+                    <a onClick='A51()' href="#">Area 51</a>
+                </div>
+                <button onClick='hamburger()' class='hamburger-icon'>
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
             </header>
 
-            <div class="hero">
-
+            <div class='hero'>
+                    <div class='hero-container'>
+                        <div class='hero-content'>
+                            <h1>Welcome Here</h1>
+                            <hr>
+                            <p> message ahdhkadhukahdakhdk uajkdsasdasdasdjkasjhasjkldhaskd ajkdhsakadjhdklashdkasl</p>
+                        </div> 
+                        <button id='button' onClick='button()'>Click Me Please</button> 
+                    </div>
+            
             </div>
 
             <footer class='footer'>
-
+                <div class='footer-content'>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <i class="fab fa-facebook-messenger fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-youtube fa-2x"></i>
+                </div>
             </footer>
         </div> 
 
     </body>
+
+    <script>
+    function A51(){
+        alert('TOP SECRET ACCESS DENIED'); 
+    }    
+    function button(){
+        let holder=document.getElementById('button');
+        if(holder.innerHTML=="Thank You"){
+            holder.innerHTML="Click Me Please";
+        }
+        else{
+            holder.innerHTML="Thank You"
+        }
+    }
+    function hamburger(){
+        alert('No Functionality'); 
+    }
+    </script>
 </html>
